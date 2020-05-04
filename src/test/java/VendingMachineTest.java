@@ -8,12 +8,12 @@ public class VendingMachineTest {
 
     VendingMachine vm;
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
         vm = new VendingMachine();
     }
 
     @After
-    public void tearDown() throws Exception {
+    public void tearDown() {
 
     }
 
