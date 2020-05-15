@@ -13,9 +13,7 @@ public class VendingMachineTest {
     }
 
     @After
-    public void tearDown() {
-
-    }
+    public void tearDown() {}
 
     @Test
     public void testVMShouldBeOffWhenInitialized() {
