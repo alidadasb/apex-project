@@ -9,18 +9,15 @@ public class VendingMachineTest {
         vm = new VendingMachine();
     }
 
-    @After
-    public void tearDown() {}
-
     @Test
     public void vmShouldTurnOnOffWhenSwitchedOnOff() {
         assertFalse(vm.isOn());
 
-        vm.pushButton();
+        vm.powerButton();
 
         assertTrue(vm.isOn());
 
-        vm.pushButton();
+        vm.powerButton();
 
         assertFalse(vm.isOn());
     }

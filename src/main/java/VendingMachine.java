@@ -1,7 +1,7 @@
 public class VendingMachine {
     boolean on;
 
-    public void pushButton() {
+    public void powerButton() {
         on = !on;
     }
 
