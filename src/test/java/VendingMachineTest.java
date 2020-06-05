@@ -1,8 +1,5 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
-
-import static org.junit.Assert.assertFalse;
+import org.junit.*;
+import static org.junit.Assert.*;
 
 public class VendingMachineTest {
 
@@ -16,7 +13,16 @@ public class VendingMachineTest {
     public void tearDown() {}
 
     @Test
-    public void testVMShouldBeOffWhenInitialized() {
+    public void vmShouldTurnOnOffWhenSwitchedOnOff() {
+        assertFalse(vm.isOn());
+
+        vm.pushButton();
+
+        assertTrue(vm.isOn());
+
+        vm.pushButton();
+
         assertFalse(vm.isOn());
     }
+
 }

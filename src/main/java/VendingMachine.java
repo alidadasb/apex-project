@@ -1,6 +1,12 @@
-
 public class VendingMachine {
-    public boolean isOn() {
-        return false;
+    boolean on;
+
+    public void pushButton() {
+        on = !on;
     }
+
+    public boolean isOn() {
+        return on;
+    }
+
 }
